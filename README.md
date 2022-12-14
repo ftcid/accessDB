@@ -8,3 +8,8 @@ saldo. The example could be modified to permit a certain action to occur when th
 
 Data of the bank account, email and conditions to be satisfied are stored in a configuration file (bankcredentials.ini)
 and read through the module ConfigParser.
+
+This file intends to be exclusively educational and does not intend to infringe any limitation impose by the bank. It is
+intended to use for the personal account and to retrieve own balances.
+
+Use this file or any modification of it at your own risk.
