@@ -120,12 +120,13 @@ def findBalance(source):
     part = "Overall balance"
     p = re.compile(part, re.IGNORECASE)
     result = p.search(html)
+
     if result is None:
         raise Exception("Overall balance not found!")
     html = html[result.span()[1]:]
 
     # now find the balance amount
-    part = "[0-9]{0,3},{0,1}[0-9]{0,3}.[0-9][0-9]"
+    part = "[0-9]{0,3},{0,1}[0-9]{0,3}\.[0-9][0-9]"
     p = re.compile(part, re.IGNORECASE)
     result = p.search(html)
 
